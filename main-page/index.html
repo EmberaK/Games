@@ -6,41 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../general-styles.css">
     <title>Main page</title>
 </head>
 
 <body>
     <header class="header__part">
-        <h1 class="logo__site">EmberaK's games</h1>
-        <nav class="header__navigation">
-            <a href="../main-page/index.html" class="header__navigation-item">Main Page</a>
-            <a href="#" class="header__navigation-item">About the Dev</a>
-            <a href="#" class="header__navigation-item">Empty</a>
-            <a href="#" class="header__navigation-item">Empty</a>
-        </nav>
+        <h1 class="logo__site">EmberaK's Games</h1>
+        <div class="sidebar">
+            <input type="checkbox" id="burger-toggle">
+            <label class="burger__toggle" for="burger-toggle">
+                <div></div>
+            </label>
+            <nav class="header__navigation">
+                <a href="../main-page/index.html" class="header__navigation-item">Main Page</a>
+                <a href="#" class="header__navigation-item">About the Dev</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+            </nav>
+        </div>
     </header>
     <main class="main__part">
         <div class="wrapper">
             <section class="main__carts">
                 <figure class="main__cart">
                     <h3 class="main__cart--heading">10 balls</h3>
-                    <img src="../images/10balls/cover.webp" alt="Image from Squid Game">
-                    <figcaption class="main__cart--discription">
+                    <div class="main__cart-image">
+                        <img class="main__cart--image" src="../images/10balls/cover.webp" alt="Image from Squid Game">
+                    </div>
+                    <figcaption class="main__cart--description">
                         "10 Balls" is an exciting logic game where you need to
                         guess a number using 10 balls. Make guesses, analyze hints, and get closer to the correct
                         answer. Can you figure out the number before you run out of attempts?
                     </figcaption>
-                    <a class="main__cart--link" href="../10balls-game/index.html">
-
+                    <a class="main__cart--link" href="../games/10balls/index.html">
                         <button class="main__cart-link">
                             Go to Game
                         </button>
                     </a>
-
+                </figure>
+                <figure class="main__cart">
+                    <h3 class="main__cart--heading">RPS</h3>
+                    <div class="main__cart-image">
+                        <img class="main__cart--image" src="../images/RockPaperScissors/cover.png" alt="Image from Squid Game">
+                    </div>
+                    <figcaption class="main__cart--description">
+                        "Rock, Paper, Scissors" is a quick-thinking game of strategy and luck. Pick your move, outplay your opponent, and claim victory!
+                    </figcaption>
+                    <a class="main__cart--link" href="../games/RockPaperScissors/index.html">
+                        <button class="main__cart-link">
+                            Go to Game
+                        </button>
+                    </a>
+                </figure>
+                <figure class="main__cart">
+                    <h3 class="main__cart--heading">RPS</h3>
+                    <div class="main__cart-image">
+                        <img class="main__cart--image" src="../images/RockPaperScissors/cover.png" alt="Image from Squid Game">
+                    </div>
+                    <figcaption class="main__cart--description">
+                        "Rock, Paper, Scissors" is a quick-thinking game of strategy and luck. Pick your move, outplay your opponent, and claim victory!
+                    </figcaption>
+                    <a class="main__cart--link" href="../games/RockPaperScissors/index.html">
+                        <button class="main__cart-link">
+                            Go to Game
+                        </button>
+                    </a>
                 </figure>
             </section>
-
-
         </div>
     </main>
     <footer class="footer__part">ddede</footer>

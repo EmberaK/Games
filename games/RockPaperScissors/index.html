@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../general-styles.css">
+    <title>RPS</title>
+</head>
+
+<body>
+    <header class="header__part">
+        <h1 class="logo__site">EmberaK's Games</h1>
+        <div class="sidebar">
+            <input type="checkbox" id="burger-toggle">
+            <label class="burger__toggle" for="burger-toggle">
+                <div></div>
+            </label>
+            <nav class="header__navigation">
+                <a href="../../main-page/index.html" class="header__navigation-item">Main Page</a>
+                <a href="#" class="header__navigation-item">About the Dev</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main__part">
+        <div class="wrapper">
+            <section class="rules">
+                <div class="rules-image">
+                    <img class="rules--image" src="../../images/RockPaperScissors/cover.png"
+                        alt="Picture to RockPaperScissors.">
+                </div>
+                <div class="rules-description">
+                    <h2 class="rules-description--heading"><b>Rules for game:</b></h2>
+                    <ul class="rules-list">
+                        <li>Two players play: user and computer.</li>
+                        <li>To start the game, press the "play" button.</li>
+                        <li>Each player chooses rock, paper, or scissors.</li>
+                        <li>Rock beats scissors. </li>
+                        <li>Scissors beat paper.</li>
+                        <li>Paper beats rock.</li>
+                        <li>In case of a tie, the game continues until one player reaches 5 points. </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block-game">
+                <div class="play__text">
+                    <h3 class="play-text"><b>Hi, dear gamer!)</b></h3>
+                </div>
+                <div class="game">
+                    <div class="game-items">
+                        <div class="items">
+                            <button class="item button--play">
+                                <p class="item--paragraph ">
+                                    Play
+                                </p>
+                            </button>
+                        </div>
+                        <div class="items items-text">
+                            <p><span>User</span> and <span>Comp</span></p>
+                            <p><span class="user--score">0</span>:<span class="comp--score">0</span></p>
+                        </div>
+                        <div class="items">
+                            <button class="item rock" disabled>
+                                <img class="item--image" src="../../images/RockPaperScissors/rock.png" alt="rock">
+                            </button>
+                            <button class="item paper" disabled>
+                                <img class="item--image" src="../../images/RockPaperScissors/paper.png" alt="paper">
+                            </button>
+                            <button class="item scissors" disabled>
+                                <img class="item--image" src="../../images/RockPaperScissors/scissors.png"
+                                    alt="scissors">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer__part">ddede</footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../general-styles.css">
     <title>10 balls game</title>
 </head>
 
 <body>
-    <header>
-
-    </header>
     <header class="header__part">
-        <h1 class="logo__site">EmberaK's games</h1>
-        <nav class="header__navigation">
-            <a href="../main-page/index.html" class="header__navigation-item">Main Page</a>
-            <a href="#" class="header__navigation-item">About the Dev</a>
-            <a href="#" class="header__navigation-item">Empty</a>
-            <a href="#" class="header__navigation-item">Empty</a>
-        </nav>
+        <h1 class="logo__site">EmberaK's Games</h1>
+        <div class="sidebar">
+            <input type="checkbox" id="burger-toggle">
+            <label class="burger__toggle" for="burger-toggle">
+                <div></div>
+            </label>
+            <nav class="header__navigation">
+                <a href="../../main-page/index.html" class="header__navigation-item">Main Page</a>
+                <a href="#" class="header__navigation-item">About the Dev</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+                <a href="#" class="header__navigation-item">Empty</a>
+            </nav>
+        </div>
     </header>
     <main class="main__part">
         <div class="wrapper">
             <section class="rules">
                 <div class="rules-image">
-                    <img class="rules--image" src="../images/10balls/cover.webp" alt="Picture to 10 balls.">
+                    <img class="rules--image" src="../../images/10balls/cover.webp" alt="Picture to 10 balls.">
                 </div>
                 <div class="rules-description">
                     <h2 class="rules-description--heading"><b>Rules for game:</b></h2>
@@ -47,10 +51,10 @@
                     <div class="game">
                         <div class="items">
                             <div class="item">
-                                <img class="comp-image" src="../images/10balls/001-sad.jpg" alt="001 gamer's photo">
+                                <img class="comp-image" src="../../images/10balls/001-sad.jpg" alt="001 gamer's photo">
                             </div>
                             <div class="item">
-                                <img class="comp-bag" src="../images/10balls/empty.png" alt="001 gamer's bag">
+                                <img class="comp-bag" src="../../images/10balls/empty.png" alt="001 gamer's bag">
                             </div>
                             <div class="item">
                                 <div class="comp__total"></div>
@@ -59,10 +63,10 @@
                         <button class="play">Play</button>
                         <div class="items">
                             <div class="item">
-                                <img class="player-image" src="../images/10balls/456-sad.jpg" alt="001 gamer's photo">
+                                <img class="player-image" src="../../images/10balls/456-sad.jpg" alt="001 gamer's photo">
                             </div>
                             <div class="item">
-                                <img class="player-bag" src="../images/10balls/empty.png" alt="001 gamer's bag">
+                                <img class="player-bag" src="../../images/10balls/empty.png" alt="001 gamer's bag">
                             </div>
                             <div class="item item-buttons">
                                 <div class="player-btns">
@@ -84,7 +88,9 @@
             </section>
         </div>
     </main>
-    <footer class="footer__part">ddede</footer>
+    <footer class="footer__part">
+        
+    </footer>
     <script src="./script.js"></script>
 </body>
 

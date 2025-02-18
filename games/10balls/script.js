@@ -31,8 +31,8 @@ playButton.addEventListener('click', () => {
     playerCountBalls = 10;
     compCountBalls = 10;
     results.innerHTML = '';
-    compImage.src = '../images/10balls/001-sad.jpg';
-    playerImage.src = '../images/10balls/456-sad.jpg';
+    compImage.src = '../../images/10balls/001-sad.jpg';
+    playerImage.src = '../../images/10balls/456-sad.jpg';
     playerCount.removeAttribute('disabled');
     playerCountBtn.removeAttribute('disabled');
     evenBtn.setAttribute('disabled', 'disabled');
@@ -43,8 +43,8 @@ playButton.addEventListener('click', () => {
 
 function createBalls(playerCount, compCount) {
     playerCount >= 20 || playerCount <= 0 ?
-        playerBag.setAttribute('src', `../images/10balls/empty.png`) :
-        playerBag.setAttribute('src', `../images/10balls/${playerCount}balls.png`);
+        playerBag.setAttribute('src', `../../images/10balls/empty.png`) :
+        playerBag.setAttribute('src', `../../images/10balls/${playerCount}balls.png`);
     playerTotal.innerHTML = playerCount;
 };
 
@@ -145,14 +145,14 @@ function checkWinner(valueComp, valuePlayer, check, step) {
     if ((valueComp % 2 == check && step) || (valuePlayer % 2 != check && !step)) {
         playerCountBalls += valuePlayer;
         compCountBalls -= valuePlayer;
-        compImage.src = '../images/10balls/001-sad.jpg';
-        playerImage.src = '../images/10balls/456-happy.jpg';
+        compImage.src = '../../images/10balls/001-sad.jpg';
+        playerImage.src = '../../images/10balls/456-happy.jpg';
         writeWinnerInRound('456', valuePlayer);
     } else {
         playerCountBalls -= valuePlayer;
         compCountBalls += valuePlayer;
-        compImage.src = '../images/10balls/001-happy.jpg';
-        playerImage.src = '../images/10balls/456-sad.jpg';
+        compImage.src = '../../images/10balls/001-happy.jpg';
+        playerImage.src = '../../images/10balls/456-sad.jpg';
         writeWinnerInRound('001', valuePlayer);
     }
 
