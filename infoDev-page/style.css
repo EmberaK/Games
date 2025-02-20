@@ -1,0 +1,65 @@
+.block{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts__dev-avatar{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+}
+.contacts__dev--avatar{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contacts__dev-avatar::after{
+
+    background-color: red;
+    top: 20px;
+    left: -20px;
+}
+.contacts__dev-discription{
+    width: 55%;
+}
+.contacts__dev__discription-paragraph{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+  
+.contacts__dev__discription--main{
+    font-size: 21px;
+}
+.contacts__dev--heading{
+    padding: 10px 20px;
+    background-color: rgba(192, 57, 43, 0.6);
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.contacts__dev--heading h2{
+    font-weight: 700;
+    font-size: 26px;
+}
+.contacts__dev--heading p{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.info-link{
+    color: rgb(231, 76, 60, 0.9);
+}
+.info-heading{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}

@@ -1,0 +1,54 @@
+.play__text {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 24px;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.game {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    min-width: 200px;
+    width: calc(100% - 200px);
+}
+.game-items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100%;
+}
+.items{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: calc(33% - (20px*2));
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.item-animal{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+}
+
+@media  (max-width: 1200px) {
+    .items{
+        width: calc(50% - (20px*2));
+        height: 300px;
+    }
+}
+@media  (max-width: 800px) {
+    .items{
+        width: 100%;
+    }
+    
+}
